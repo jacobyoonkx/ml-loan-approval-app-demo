@@ -1,8 +1,9 @@
 # 💳 Credit Decision Engine (ML + FastAPI + Streamlit)
 
 A lightweight, explainable loan approval engine inspired by decisioning platforms like **Taktile**. This project uses a logistic regression model served with **FastAPI**, and visualized through a **Streamlit** frontend for interactive predictions, confidence scores, and trend analysis.
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ml-loan-approval-app-demo.streamlit.app)
+
 ---
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]((https://taktile-interview.streamlit.app/))
 
 ## 🚀 What It Does
 
