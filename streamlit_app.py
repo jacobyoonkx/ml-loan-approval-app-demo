@@ -30,7 +30,7 @@ if st.button("Submit Application"):
     prediction = model.predict(features)[0]
     confidence = model.predict_proba(features)[0][1] if prediction == 'approved' else model.predict_proba(features)[0][0]
 
-    st.success(f"Decision: {prediction.upper()}")
+    st.success(f"Decision: {str(prediction).upper()}")
     st.write(f"📝 Explanation: Model predicts '{prediction}' with confidence: {confidence:.2f}")
 
     st.metric(label="🤖 Model Confidence", value=f"{confidence:.0%}")
