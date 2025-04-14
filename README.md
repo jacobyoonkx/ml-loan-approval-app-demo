@@ -31,9 +31,9 @@ A lightweight, explainable loan approval engine inspired by decisioning platform
 
 ## 📸 Demo Preview
 
-- Streamlit form to enter applicant data  
-- Real-time decision with confidence bar  
-- Bar and scatter plots of approval trends  
+- Streamlit form to enter applicant data
+- Real-time decision with confidence bar
+- Bar and scatter plots of approval trends
 
 *(Add screenshots here once available)*
 
@@ -41,19 +41,27 @@ A lightweight, explainable loan approval engine inspired by decisioning platform
 
 ## 📁 File Structure
 
-. ├── app/ │ ├── logic.py # ML logic and prediction handler │ ├── schemas.py # Pydantic data validation models │ ├── routes.py # FastAPI route for loan decisioning │ ├── train_model.py # Model training script │ ├── model.pkl # Saved ML model │ └── streamlit_app.py # Frontend UI using Streamlit ├── main.py # FastAPI app entry point ├── requirements.txt # Python dependencies ├── README.md # Project documentation
-
-yaml
-Copy
-Edit
+```
+.
+├── app/
+│   ├── logic.py              # ML logic and prediction handler
+│   ├── schemas.py            # Pydantic data validation models
+│   ├── routes.py             # FastAPI route for loan decisioning
+│   ├── train_model.py        # Model training script
+│   ├── model.pkl             # Saved ML model
+│   └── streamlit_app.py      # Frontend UI using Streamlit
+├── main.py                   # FastAPI app entry point
+├── requirements.txt          # Python dependencies
+├── README.md                 # Project documentation
+```
 
 ---
 
 ## 🧪 How to Run Locally
 
 ```bash
-git clone https://github.com/jacobyoonkx/ml-loan-approval-app-demo.git
-cd ml-loan-approval-app-demo
+git clone https://github.com/your-username/ml-loan-approval-app.git
+cd ml-loan-approval-app
 
 python -m venv venv
 source venv/bin/activate          # On Windows: venv\Scripts\activate
@@ -67,24 +75,24 @@ uvicorn main:app --reload
 
 # In a separate terminal, run Streamlit frontend
 streamlit run app/streamlit_app.py
-💡 Features
-Rule-based override: Rejects if credit score < 500 or loan > 10x income
+```
 
-Confidence display: Shows how certain the model is about each prediction
+---
+## 💡 Features
 
-Charts: Visualize decision trends over time
+- Rule-based override: Rejects if credit score < 500 or loan > 10x income  
+- Confidence display: Shows how certain the model is about each prediction  
+- Charts: Visualize decision trends over time  
+- Session history: Live results stored and visualized in each user session  
 
-Session history: Live results stored and visualized in each user session
+## 📌 Future Ideas
 
-📌 Future Ideas
-Add SHAP explainability for model transparency
+- Add SHAP explainability for model transparency  
+- Deploy on Streamlit Cloud / Hugging Face / Render  
+- Use real-world dataset for training  
+- Add version tracking for the model  
 
-Deploy on Streamlit Cloud / Hugging Face / Render
+## 🙋‍♂️ Author
 
-Use real-world dataset for training
-
-Add version tracking for the model
-
-🙋‍♂️ Author
-Built by @jacobyoonkx
+Built by [@jacobyoonkx](https://github.com/jacobyoonkx)  
 Inspired by real-world credit decisioning platforms like Taktile.
